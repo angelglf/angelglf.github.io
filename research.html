@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Ángel García-Lascurain Fernández</title>
+<meta name="description" content="Working papers and research by Ángel García-Lascurain Fernández: trade policy, supply chains, firm entry, and labor market informality in Mexico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+(function(){
+  var t;
+  try { t = localStorage.getItem("theme"); } catch(e) {}
+  if (!t) t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Ángel García-Lascurain</a>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="cv.html">CV</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>Working Papers</h2>
+
+    <div class="card">
+      <h3>Tariffs, Rules of Origin, and the Reorganization of North American Supply Chains</h3>
+      <p class="meta">Working paper · Draft available on request</p>
+      <p class="abstract">This paper studies how firms organize their North American supply chains under different configurations of tariffs and rules of origin. I develop a global sourcing model with heterogeneous firms that choose sourcing sets and USMCA compliance to maximize profits, and use it to evaluate how tariffs and rules of origin jointly shape compliance rates, supply chain structure, and Mexican welfare.</p>
+      <div class="links"><a href="mailto:agarc475@asu.edu">Request draft</a></div>
+    </div>
+
+    <div class="card">
+      <h3>Foreign Firm Footprints: Entry, Agglomeration and Welfare in Mexico</h3>
+      <p class="meta">Working paper · Draft available on request</p>
+      <p class="abstract">This paper examines the determinants of foreign and domestic firm entry across Mexican labor markets. Foreign firms sort into locations that maximize expected profits, with entry probabilities driven by agglomeration economies, input costs, trade costs, and export market access, while domestic firms face a simpler productivity-cutoff entry decision at fixed locations. The paper estimates these entry patterns via Poisson regression and uses the results to conduct counterfactual exercises evaluating how U.S. tariff impositions would affect firm location decisions, input markets, and welfare across Mexican regions.</p>
+      <div class="links"><a href="mailto:agarc475@asu.edu">Request draft</a></div>
+    </div>
+
+    <div class="card">
+      <h3>Labor Market Power and Informality</h3>
+      <p class="meta"><span class="co">with Octavio Vera</span> · Working paper</p>
+      <p class="abstract">This paper documents differences in wage markdowns in both the formal and informal sectors of the Mexican economy and proposes a theory linking labor market power to the structure of formal employment costs. The core insight is that firms with monopsony power can pass the implicit tax of formal hiring — including social security contributions, retirement funds, and firing costs — onto workers through lower wages, generating higher observed markdowns among more formal firms.</p>
+      <div class="links"><a href="mailto:agarc475@asu.edu">Request draft</a></div>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Earlier Work</h2>
+
+    <div class="card">
+      <h3>Inter-City and Inter-Occupational Response to New Capital</h3>
+      <p class="meta">M.S. project, Duke University</p>
+      <p class="abstract">A spatial knowledge economy model examining how individuals adapt to labor market opportunities created by technological advancement through idea sharing across regions and professions.</p>
+      <div class="links"><a href="https://drive.google.com/file/d/1PuNJoTUDAV33RiMV2vkWtVuqqXTGF45Y/view">Paper</a></div>
+    </div>
+
+    <div class="card">
+      <h3>Machine Learning Algorithms for the Prediction of Labor Informality in Mexico</h3>
+      <p class="meta">M.S. project, Duke University</p>
+      <p class="abstract">Develops machine learning–based predictive models using individual social and demographic characteristics to forecast labor informality patterns in Mexico.</p>
+      <div class="links"><a href="https://drive.google.com/file/d/1Wbda_UYNOlUXQ2hXKADsFIbn_oOWzpw4/view">Paper</a></div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Ángel García-Lascurain Fernández</span>
+    <span><a href="mailto:agarc475@asu.edu">agarc475@asu.edu</a></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById("themeToggle").addEventListener("click", function () {
+  var root = document.documentElement;
+  var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", next);
+  try { localStorage.setItem("theme", next); } catch (e) {}
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Ángel García-Lascurain Fernández</title>
+<meta name="description" content="Curriculum vitae of Ángel García-Lascurain Fernández, PhD candidate in Economics at Arizona State University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+(function(){
+  var t;
+  try { t = localStorage.getItem("theme"); } catch(e) {}
+  if (!t) t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Ángel García-Lascurain</a>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="cv.html" aria-current="page">CV</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>Curriculum Vitae</h2>
+    <p class="prose" style="margin-bottom:1.4rem;">A summary is below; the full CV is available as a PDF.</p>
+    <a class="btn btn-primary" href="assets/Garcia-Lascurain_CV.pdf">Download CV (PDF)</a>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="cv-entry">
+      <div class="when">2027 (exp.)</div>
+      <div class="what"><strong>Ph.D. in Economics</strong><span>Arizona State University</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2022</div>
+      <div class="what"><strong>M.S. in Economics &amp; Computation</strong><span>Duke University</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2017</div>
+      <div class="what"><strong>B.A. in Economics</strong><span>Universidad Iberoamericana, Mexico City</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research Fields</h2>
+    <p class="prose">Macroeconomics · International Economics · Development Economics</p>
+  </section>
+
+  <section>
+    <h2>Teaching</h2>
+    <div class="cv-entry">
+      <div class="when">Summer 2025</div>
+      <div class="what"><strong>Macroeconomic Principles</strong><span>Instructor, Arizona State University</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2023 – 2025</div>
+      <div class="what"><strong>Development Economics</strong><span>Teaching Assistant for Prof. Manjira Datta, Arizona State University (Fall 2023, Spring 2024, Fall 2024, Spring 2025)</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="cv-entry">
+      <div class="when">2018 – 2020</div>
+      <div class="what"><strong>Banco de México</strong><span>Economist (Analyst), General Directorate of Economic Research</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2017</div>
+      <div class="what"><strong>Sura México</strong><span>Trainee, Wealth Management Division</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research Assistant Experience</h2>
+    <div class="cv-entry">
+      <div class="when">2024 –</div>
+      <div class="what"><strong>Arizona State University</strong><span>for Prof. Samuel Young</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2023 – 2024</div>
+      <div class="what"><strong>Georgetown University in Qatar</strong><span>for Prof. Santiago Garcia-Couto</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2021 – 2022</div>
+      <div class="what"><strong>Duke University</strong><span>for Prof. Matthias Kehrig and Prof. Marjorie McElroy</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Awards</h2>
+    <div class="cv-entry">
+      <div class="when">2026</div>
+      <div class="what"><strong>ASU Dissertation Progress Award in Economics</strong></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">2020</div>
+      <div class="what"><strong>Duke Economics Masters Scholar Award</strong></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Other</h2>
+    <div class="cv-entry">
+      <div class="when">2025 –</div>
+      <div class="what"><strong>U.S. Census Bureau</strong><span>Special Sworn Status</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when"></div>
+      <div class="what"><strong>Software</strong><span>Stata, R, Python, Matlab, EViews, LaTeX, Microsoft Office</span></div>
+    </div>
+    <div class="cv-entry">
+      <div class="when"></div>
+      <div class="what"><strong>Languages</strong><span>English (fluent), Spanish (native)</span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Ángel García-Lascurain Fernández</span>
+    <span><a href="mailto:agarc475@asu.edu">agarc475@asu.edu</a></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById("themeToggle").addEventListener("click", function () {
+  var root = document.documentElement;
+  var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", next);
+  try { localStorage.setItem("theme", next); } catch (e) {}
+});
+</script>
+
+</body>
+</html>
