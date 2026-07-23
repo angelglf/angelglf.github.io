@@ -18,7 +18,6 @@ Buy a domain (e.g. `angelgarcialascurain.com`), then in the repo go to *Settings
 ## Things still to fill in
 
 - **Photo**: add a square-ish portrait as `assets/photo.jpg`. Until then the site shows a styled "ÁG" monogram automatically.
-- **LinkedIn**: the LinkedIn chip on the home page currently points to `https://www.linkedin.com/` — replace it with the real profile URL in `index.html`.
 - **Job market paper**: if one of the working papers becomes the JMP, change its label in `research.html` (the `meta` line) to "Job market paper".
 - **Paper drafts**: the two current working papers say "Draft available on request" — swap in PDF links when drafts are public (put PDFs in `assets/` and link them from the paper cards).
 - The two Duke-era projects still link to the old Google Drive files; consider moving those PDFs into `assets/` too so nothing depends on Drive permissions.
