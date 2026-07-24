@@ -1,6 +1,6 @@
 # Academic website — Ángel García-Lascurain Fernández
 
-A modern, dependency-free static site (plain HTML + CSS, no build step). Three pages: `index.html` (About), `research.html`, `cv.html`, with the CV PDF in `assets/`.
+A modern, dependency-free static site (plain HTML + CSS, no build step). Two pages: `index.html` (About) and `research.html`. The CV nav link points directly to the PDF in `assets/`.
 
 ## Publish on GitHub Pages (about 5 minutes)
 
