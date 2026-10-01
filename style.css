@@ -35,6 +35,18 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -116,7 +128,7 @@ nav a[aria-current="page"] { color: var(--accent); }
   display: grid;
   grid-template-columns: 15.5rem 1fr;
   gap: 3.2rem;
-  align-items: start;
+  align-items: center;
   padding-top: 3.6rem;
 }
 
@@ -143,22 +155,11 @@ nav a[aria-current="page"] { color: var(--accent); }
   border: 1px solid var(--rule);
 }
 
-.intro-body h1 {
-  font-size: 2.05rem;
-  font-weight: 700;
-  line-height: 1.15;
-  text-wrap: balance;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  margin-bottom: 0.35rem;
-}
-
-.intro-body h1 .nb { white-space: nowrap; }
-
 .intro-body .sub {
-  font-size: 1.05rem;
-  color: var(--ink-soft);
-  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
 }
 
 .intro-body .sub a { color: var(--accent); text-decoration: none; }
@@ -399,11 +400,9 @@ footer { border-top: 1px solid var(--rule); }
   .intro { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.6rem; }
   .intro-body { border-left: none; padding-left: 0; }
   .profile-photo, .profile-monogram { max-width: 13rem; }
-  .intro-body h1 { font-size: 1.8rem; }
 }
 
 @media (max-width: 680px) {
-  .intro-body h1 { font-size: 1.55rem; }
   .two-col { grid-template-columns: 1fr; gap: 1.8rem; }
   .cv-entry { grid-template-columns: 1fr; gap: 0.1rem; }
   nav a { margin-left: 1rem; }
