@@ -250,6 +250,8 @@ a.inline:hover { text-decoration: underline; }
   position: relative;
 }
 
+.interests strong { color: var(--ink); font-weight: 600; }
+
 .interests li::before {
   content: "";
   position: absolute;
